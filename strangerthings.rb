@@ -1,78 +1,16 @@
-#First Measure of the Stranger Things Main Theme
-3.times do
-  use_bpm 160
-  use_synth :hoover
-  play :C4
-  play :C4
-  play :C3
-  sleep 0.50
-  play :E4
-  sleep 0.5
-  play :G4
-  sleep 0.50
-  play :B4
-  sleep 0.5
-  play :C5
-  sleep 0.5
-  play :B4
-  sleep 0.5
-  play :G4
-  sleep 0.5
-  play :E4
-  sleep 0.5
-  #measure 2
-  play :C4
-  sleep 0.5
-  play :E4
-  sleep 0.5
-  play :G4
-  sleep 0.5
-  play :B4
-  sleep 0.5
-  play :C5
-  sleep 0.5
-  play :B4
-  sleep 0.5
-  play :G4
-  sleep 0.5
-  play :E4
-  sleep 0.5
-  #Third Measure
-  play :C4
-  sleep 0.5
-  play :E4
-  sleep 0.5
-  play :G4
-  sleep 0.5
-  play :B4
-  sleep 0.5
-  play :C5
-  play :D4
-  play :D3
-  sleep 0.5
-  play :B4
-  sleep 0.5
-  play :G4
-  sleep 0.5
-  play :E4
-  sleep 0.5
-  #Fourth Measure
-  play :C4
-  sleep 0.5
-  play :E4
-  sleep 0.5
-  play :G4
-  sleep 0.5
-  play :B4
-  sleep 0.5
-  play :C5
-  play :E4
-  play :E3
-  sleep 0.5
-  play :B4
-  sleep 0.5
-  play :G4
-  sleep 0.5
-  play :E4
-  sleep 0.5
+#Stranger Things Main Theme
+# NOTE: Each measure's total sleep adds up to 4 because the time signature is 4/4
+use_bpm 160
+use_synth :saw
+stranger_things = [:c2,:e2,:g2,:b2,:c3,:b2,:g2,:e2]
+index = 0
+
+8.times do
+  with_fx :distortion do
+    #Will play the first variable which is c2
+    play stranger_things[index]
+    sleep 0.5
+    index= index + 1
+    #will then play the following variables which are in the array above
+  end
 end
