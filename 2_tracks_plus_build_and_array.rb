@@ -25,6 +25,7 @@ use_synth :dpulse
 song1 = [:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,]
 song2 =[:ab4,:as4,:bs4,:as4,:cs5,:bs4,:es5,:eb5]
 index = 0
+
 2.times do
   use_synth :fm
   with_fx :echo do
