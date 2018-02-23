@@ -22,7 +22,7 @@ end
 
 
 use_synth :chipbass
-song1 = [:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,] #These are the notes for Livin on Prayer 
+song1 = [:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,:e2,:e3,:b2,:d3,:e2,:e2,:b2,:d3,] #These are the notes for Livin on Prayer
 song2 =[:ab4,:as4,:bs4,:as4,:cs5,:bs4,:es5,:eb5] # These notes are for Only Girl
 index = 0
 
@@ -30,10 +30,9 @@ index = 0
   use_synth :chipbass
   with_fx :echo do
     8.times do
-      a= choose([:ab4,:as4,:bs4,:as4,:cs5,:bs4,:es5,:eb5])
-      play a
-      print a
+      play song2[index],cuttoff: rrand(30,105),amp: 0.5
       sleep 0.5
+      index=index+1
     end
     index=0
   end
@@ -43,8 +42,7 @@ live_loop :intro do
   with_fx :distortion do
     20.times do
       #Will play the first variable which is e2
-      
-      play song1[index]
+      play song1[index],cuttoff: rrand(25,40),amp: 1
       sleep 0.5
       #will then play the following variables which are in the array aboven
       index=index+1
@@ -79,3 +77,4 @@ end
   sample :drum_splash_hard
   sleep 1
 end
+
