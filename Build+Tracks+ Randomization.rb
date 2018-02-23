@@ -30,7 +30,7 @@ index = 0
   use_synth :chipbass
   with_fx :echo do
     8.times do
-      play song2[index],cuttoff: rrand(30,105),amp: 0.5
+      play song2[index],cuttoff: rrand(30,105),amp: 0.5 #rrandom stands for randomization meaning it will randoise a measure between 30 and 105 to cutoff for each note.
       sleep 0.5
       index=index+1
     end
