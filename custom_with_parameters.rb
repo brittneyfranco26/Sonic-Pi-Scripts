@@ -75,6 +75,6 @@ end
   end
 end
 use_synth :dpulse
-play custom 0.5,1 ,attack: 0.7
+play custom 0.5,1 
 play custom 0.55,1
 #So in the line above I have placed a number as the two parameters 0.5 will take the place of n and 1 will take the place of b.
