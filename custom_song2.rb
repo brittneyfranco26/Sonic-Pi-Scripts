@@ -57,6 +57,7 @@ define :rewind_notes do
       stop
     end
   end
+  b=0
 end
 #Here are my call to actions and where the Custom Song2 Begins
 use_synth :zawa
