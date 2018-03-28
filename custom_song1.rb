@@ -1,5 +1,5 @@
 #Cutsom_Song_1
-# Brockhampton
+# Brockhampton I obtained the songs from souncloud
 # I really enjoy this artist, and I really wanted to put a few more songs from this artist so I decided to make two songs as my Custom Song
 queersample1 ="/Users/brittneyfranco/Desktop/school/Computer Science/customsong1"
 custom_part_i = queersample1
